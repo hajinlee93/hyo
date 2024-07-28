@@ -18,12 +18,10 @@ export default function ProjectBox({
   project: {
     title,
     intro,
+    category,
     description,
     stacks,
-    category,
     startDate,
-    endDate,
-    githubUrl,
     serviceUrl,
     points,
     path,
@@ -75,9 +73,7 @@ export default function ProjectBox({
           <div className="text-center lg:text-left md:text-left mb-4 mx-6">
             <div className="flex justify-center md:justify-start lg:justify-start items-center">
               <h3 className="text-xl md:text-2xl font-scoreRegular">{title}</h3>
-              <Link href={githubUrl} target="_blank">
-                <IoLogoGithub className="w-6 h-6 ml-2" />
-              </Link>
+              
             </div>
             <span className="text-lg mr-2">{intro}</span>
             {category.map((keyword) => (

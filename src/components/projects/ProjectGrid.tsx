@@ -10,12 +10,12 @@ type Props = {
 
 const ProjectCard = dynamic(() => import("./ProjectCard"));
 
-export default function ProjectGrid({ projects, onSelectProject }: Props) {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  const sortedProjects = projects.sort((a, b) =>
-    a.endDate > b.endDate ? -1 : 1
-  );
+// export default function ProjectGrid({ projects, onSelectProject }: Props) {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref);
+//   const sortedProjects = projects.sort((a, b) =>
+//     a.endDate > b.endDate ? -1 : 1
+//   );
 
   const variants = {
     hidden: { opacity: 0, y: 50 },

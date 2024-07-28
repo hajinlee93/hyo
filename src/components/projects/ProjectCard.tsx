@@ -10,7 +10,7 @@ type Props = {
 const StackIcons = dynamic(() => import("./StackIcons"));
 
 export default function ProjectCard({
-  project: { title, intro, startDate, endDate, category, path, stacks },
+  project: { title, intro, startDate, category, path, stacks },
   onSelectProject,
 }: Props) {
   return (

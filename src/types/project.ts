@@ -16,12 +16,10 @@ export type Project = {
     title: string;
   }[];
   startDate: string;
-  endDate: string;
   category: string[];
   path: string;
   featured: boolean;
   stacks: string[];
-  githubUrl: string;
   docsUrl: string;
   serviceUrl: string;
   images: number;

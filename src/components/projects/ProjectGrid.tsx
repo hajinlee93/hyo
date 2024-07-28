@@ -13,9 +13,9 @@ const ProjectCard = dynamic(() => import("./ProjectCard"));
 export default function ProjectGrid({ projects, onSelectProject }: Props) {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  // const sortedProjects = projects.sort((a, b) =>
-  //   a.endDate > b.endDate ? -1 : 1
-  // );
+  const sortedProjects = projects.sort((a, b) =>
+    a.startDate > b.startDate ? -1 : 1
+  );
 
   const variants = {
     hidden: { opacity: 0, y: 50 },
@@ -27,7 +27,7 @@ export default function ProjectGrid({ projects, onSelectProject }: Props) {
       ref={ref}
       className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  mb-14 font-scoreRegular"
     >
-      {/* {sortedProjects.map((project, index) => (
+      {sortedProjects.map((project, index) => (
         <motion.li
           key={project.path}
           variants={variants}
@@ -37,7 +37,7 @@ export default function ProjectGrid({ projects, onSelectProject }: Props) {
         >
           <ProjectCard project={project} onSelectProject={onSelectProject} />
         </motion.li>
-      ))} */}
+      ))}
     </ul>
   );
 }

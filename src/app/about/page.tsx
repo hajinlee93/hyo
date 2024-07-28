@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { AnimatePresence, Variants, motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import ProfileImage from "../../../public/images/profile.jpg";
@@ -120,7 +119,7 @@ export default function AboutPage() {
                 variants={messageItemVariants}
               >
                 <span>이효재 목장 슬로건</span>
-                <span> "힘써 알자"</span>
+                <span> 힘써 알자</span>
               </motion.p>
               <div
                 className="w-60 h-72 sm:h-80 md:w-[22rem] md:h-auto overflow-hidden block rounded-xl"

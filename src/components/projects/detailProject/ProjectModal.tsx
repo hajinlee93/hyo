@@ -58,7 +58,7 @@ export default function ProjectModal({
           <ModalContainer onClick={stopPropagation}>
             <ProjectShortcut projectPath={projectPath} />
             <p className="text-2xl font-semibold md:font-bold md:text-3xl mb-8 md:mb-12 mt-10 md:mt-12">
-              {projectType ? "팀 프로젝트" : "개인 프로젝트"}
+              {/* {projectType ? "팀 프로젝트" : ""} */}
             </p>
             <MainFeature project={project} />
             {project.contribution && (

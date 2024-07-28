@@ -24,3 +24,4 @@ export type Project = {
   serviceUrl: string;
   images: number;
 };
+
